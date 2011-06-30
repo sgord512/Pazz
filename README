@@ -36,4 +36,20 @@ experience.
 I'm also using the cmd-args library to handle the command-line
 parsing, and documentation generation. 
 
-I should also use Haddock probably, and see if I can't get this on HackageDB.
+I should also use Haddock probably, and see if I can't get this on
+HackageDB.
+
+Ok, so if I am using relational DB, then I don't need to worry about
+the redundancy of having albums that know songs and
+vice-versa. Furthermore, I don't have to worry about handling the
+parsing manually. On the other hand, I do have to interface with the
+database as opposed to just looking at plain text. I guess that isn't
+a big problem, and I can always just output files as needed. 
+
+I can also use Haskell's interact, and just do a function mapping
+table, to really simplify the structure of the program. What else do I
+want it to be able to do?
+
+Oh, it should keep track of date added. Maybe, also think about
+integration with iTunes. I should get it added to Homebrew when it is
+finished too, cause that would be AWESOME! 
