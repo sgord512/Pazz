@@ -16,7 +16,6 @@ So the possibilities for the above line are: the song is found, and the new note
 					     other errors.
 
 commands:
-
 note: add a note (can be artist, song, album)
 song: shortcut for adding song. If already there, then append.
 album: shortcut for adding album. If already there, then append.
@@ -53,3 +52,14 @@ want it to be able to do?
 Oh, it should keep track of date added. Maybe, also think about
 integration with iTunes. I should get it added to Homebrew when it is
 finished too, cause that would be AWESOME! 
+
+
+Ok, so I need the following SCHEMA:
+
+Table of Albums with Name, Notes, and Foreign Key to Songs and Artist.	
+Table of Songs with Name, Notes, and Foreign Key to Album, and Foreign Key to Artist.
+Table of Artist with Name, Notes, and Foreign Key to Album, and Foreign Key to Song.
+
+Ok, so I think I now have the database interacting correctly with Haskell.
+Now, I have to implement the command-line interface.
+I also should figure out some way to do some automatic correction to make sure that artists aren't repeated.
