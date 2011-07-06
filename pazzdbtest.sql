@@ -5,3 +5,5 @@ insert into artists (artist_name, artist_notes) values ('They Might Be Giants', 
 insert into songs (song_name, song_notes, album_id) values ('Absolutely Bill''s Mood', 'Absolutely Bill''s Mood moody, dramatic, another classic on TMBG''s eponymous album. Interesting rythmically. The back end of this album needs more love.', NULL);
 
 update songs set album_id = (select album_id from albums where album_name = 'They Might Be Giants');
+
+insert into artist_song_bridge (artist_id, song_id) values ((select artist_id from artists where artist_name = 'They Might Be Giants'), (select song_id from songs where song_name = 'Absolutely Bill''s Mood'));

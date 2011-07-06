@@ -63,3 +63,7 @@ Table of Artist with Name, Notes, and Foreign Key to Album, and Foreign Key to S
 Ok, so I think I now have the database interacting correctly with Haskell.
 Now, I have to implement the command-line interface.
 I also should figure out some way to do some automatic correction to make sure that artists aren't repeated.
+
+Ok, so the thing with command-line parsing is that I have to make sure that violations are handled at the appropriate level.
+
+First 
